@@ -14,7 +14,7 @@ data:
     - groups:
       - - expense-admin
       userarn: arn:aws:iam::905418172435:user/anvika
-      username: nvika  
+      username: anvika  
 kind: ConfigMap
 metadata:
   creationTimestamp: "2024-11-06T20:13:01Z"
