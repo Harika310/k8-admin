@@ -1,0 +1,23 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: expense
+  name: expense-trainee
+rules:
+- apiGroups: [""] # "" indicates the core API group
+  resources: ["pods"]
+  verbs: ["get", "watch", "list"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: expense-trainee
+  namespace: expense
+roleRef:
+  kind: Role
+  name: expense-trainee
+  apiGroup: rbac.authorization.k8s.io    
+subjects:
+- kind: User
+  name: harika
+  apiGroup: rbac.authorization.k8s.io
