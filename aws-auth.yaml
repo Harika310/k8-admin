@@ -17,7 +17,7 @@ data:
       username: nvika  
 kind: ConfigMap
 metadata:
-creationTimestamp: "2024-11-06T20:13:01Z"
+  creationTimestamp: "2024-11-06T20:13:01Z"
   name: aws-auth
   namespace: kube-system
   uid: 703631e2-2593-46dc-82ca-8901dd33793b
