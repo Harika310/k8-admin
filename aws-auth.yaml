@@ -12,7 +12,7 @@ data:
       userarn: arn:aws:iam::905418172435:user/harika
       username: harika
     - groups:
-      - expense-trainee
+      - - expense-admin
       userarn: arn:aws:iam::905418172435:user/anvika
       username: nvika  
 kind: ConfigMap
